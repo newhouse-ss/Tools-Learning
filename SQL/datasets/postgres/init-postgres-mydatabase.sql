@@ -1,3 +1,7 @@
+
+
+
+
 -- Connect to the default database (if not already connected)
 \c postgres
 
