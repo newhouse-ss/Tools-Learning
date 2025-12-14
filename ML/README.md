@@ -15,3 +15,8 @@ There's an example to understand the difference:
 ## Notations and General concepts
 ![](/pages-to-jpg/cs229-ml-cheatsheet/notation-concept.png)
 ### *Loss function: The introduction to Hingen loss and algorithm SVM
+SVM & Hinge Loss  
+- Goal: Not just separate, but separate with a safety margin (Street).  
+- Hinge Loss Formula: $L = \max(0, 1 - yz)$.
+- The "1": Represents the margin boundary (the edge of the street).
+- Key Difference: unlike Logistic Regression which cares about everyone, Hinge Loss ignores well-classified data points (Loss = 0). It only focuses on the "borderline" cases (Support Vectors).
