@@ -1,5 +1,6 @@
-## This is my ML cheatsheet,  since I start learning ML from a total beginner level, so this beginner point of view may help you understand.
-### concepts and algorithms in supervised learning
+# This is my ML cheatsheet,  since I start learning ML from a total beginner level, so this beginner point of view may help you understand.
+
+## Introducing to supervised learning
 - discriminative model V.S. generative model
 ![](/pages-to-jpg/cs229-ml-cheatsheet/difference%20between%20discriminative%20and%20generative%20model.png)
 You can distinguish them by their goal.  
@@ -11,3 +12,6 @@ There's an example to understand the difference:
     - generative model: But since this guy learns the feature of the input firstly, it can distinguish the duck neither like cat nor dog, the model will raise an outlier.
     - For some reason,  generative model optimize faster, thus better for small data case.  
     Why faster? Because they make stronger assumptions about the data shape (e.g., assuming it's a Gaussian distribution). They need less data to estimate simple parameters like mean and variance, making them robust for small datasets.
+## Notations and General concepts
+![](/pages-to-jpg/cs229-ml-cheatsheet/notation-concept.png)
+### *Loss function: The introduction to Hingen loss and algorithm SVM
