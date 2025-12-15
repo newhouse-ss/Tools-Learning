@@ -14,9 +14,11 @@ There's an example to understand the difference:
     Why faster? Because they make stronger assumptions about the data shape (e.g., assuming it's a Gaussian distribution). They need less data to estimate simple parameters like mean and variance, making them robust for small datasets.
 ## Notations and General concepts
 ![](/pages-to-jpg/cs229-ml-cheatsheet/notation-concept.png)
-### *Loss function: The introduction to Hingen loss and algorithm SVM
-SVM & Hinge Loss  
-- Goal: Not just separate, but separate with a safety margin (Street).  
-- Hinge Loss Formula: $L = \max(0, 1 - yz)$.
-- The "1": Represents the margin boundary (the edge of the street).
-- Key Difference: unlike Logistic Regression which cares about everyone, Hinge Loss ignores well-classified data points (Loss = 0). It only focuses on the "borderline" cases (Support Vectors).
+### *Loss function
+SVMs are often used in classification tasks, they distinguish between 2 classes by finding the optimal hyperplane which maximize the marigin between the closest data points of opposite classes.  
+![](/pages-to-jpg/cs229-ml-cheatsheet/svm.png)
+The introduction to Hingen loss and algorithm SVM:
+- ***support vectors*** go through the points which define the max margin.
+- ***margin*** is a boundary(street) to divide 2 classes(communities)
+- ***Optimal hyperplane*** is the plane which maximizes the margin.
+The function of hyperplane is: $wx+b = 0$, where w and x are vectors.
